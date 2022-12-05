@@ -1,0 +1,46 @@
+name: Star-linux
+
+on:
+    push:
+    workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+       - name: checkout star-linux
+         uses: actions/checkout@main
+       
+       - uses: styfle/cancel-workflow-action@0.9.0
+         name: "cancel duplicate workflow runs"
+         with:
+            all_but_latest: true
+            access_token: ${{ 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 }}
+       - name: initialization star-linux
+         continue-on-error: true
+         run: |
+           git config --global user.name ${{ secrets.Starboihackss723 }}
+           git config --global user.email ${{ secrets.kumarvansh64937@gmail.com }}
+           git config --global credential.helper store
+           echo "https://${{ secrets.Starboihackss723 }}:${{ secrets.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 }}@github.com" > ~/.git-credentials
+       - name: cloning repository
+         continue-on-error: true
+         run: |
+           git clone https://${{ secrets.starboihackss723 }}:${{ secrets.GIT_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 }}@${{ secrets.https://github.com/Starboihackss723/ok }} star
+       - name: running star-linux server
+         timeout-minutes: 350
+         continue-on-error: true
+         run: |
+           cd bikash
+           docker build . -t star
+           docker run star
+       - name: loop star-linux server
+         continue-on-error: true
+         run: |
+              git clone https://github.com/${https://github.com/Starboihackss723/ok} loop
+              cd loop || exit 1
+              echo $(date -u +%T%P) >> loop.txt
+              git add loop.txt
+              git commit -m "Star-Linux : Loop $(date -u +%D-%T%P)"
+              git push -q https://${{ secrets.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 }}@github.com/${https://github.com/Starboihackss723/ok} HEAD:star-linux
