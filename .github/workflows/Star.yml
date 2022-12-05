@@ -16,14 +16,14 @@ jobs:
          name: "cancel duplicate workflow runs"
          with:
             all_but_latest: true
-            access_token: ${{ github.token }}
+            access_token: ${{ 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 }}
        - name: initialization star-linux
          continue-on-error: true
          run: |
-           git config --global user.name ${{ secrets.GIT_NAME }}
-           git config --global user.email ${{ secrets.GIT_EMAIL }}
+           git config --global user.name ${{ secrets.Starboihackss723 }}
+           git config --global user.email ${{ secrets.kumarvansh64937@gmail.com }}
            git config --global credential.helper store
-           echo "https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https://${{ secrets.Starboihackss723 }}:${{ secrets.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 }}@github.com" > ~/.git-credentials
        - name: cloning repository
          continue-on-error: true
          run: |
