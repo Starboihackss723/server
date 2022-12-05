@@ -27,7 +27,7 @@ jobs:
        - name: cloning repository
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@${{ secrets.BOT_REPO }} star
+           git clone https://${{ secrets.Starboihackss723 }}:${{ secrets.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 }}@${{ secrets.github.com/Starboihackss723/ok }} star
        - name: running star-linux server
          timeout-minutes: 350
          continue-on-error: true
@@ -38,9 +38,9 @@ jobs:
        - name: loop star-linux server
          continue-on-error: true
          run: |
-              git clone https://github.com/${GITHUB_REPOSITORY} loop
+              git clone https://github.com/${starboihackss723/ok} loop
               cd loop || exit 1
               echo $(date -u +%T%P) >> loop.txt
               git add loop.txt
               git commit -m "Star-Linux : Loop $(date -u +%D-%T%P)"
-              git push -q https://${{ secrets.GIT_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:star-linux
+              git push -q https://${{ secrets.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 }}@github.com/${github.com/Starboihackss723/ok} HEAD:star-linux
