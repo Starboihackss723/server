@@ -27,7 +27,7 @@ jobs:
        - name: cloning repository
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.Starboihackss723 }}:${{ secrets.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 }}@${{ secrets.github.com/Starboihackss723/ok }} star
+           git clone https://${{ secrets.github.com/Starboihackss723/ok }}:${{ secrets.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 }}@${{ secrets.github.com/Starboihackss723/ok }} star
        - name: running star-linux server
          timeout-minutes: 350
          continue-on-error: true
